@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); */
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    background-size: 400% 400%;
+    animation: animate 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to top, #09203f 0%, #011625 100%);
+    border-radius: 200px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; ;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+
+    50%{
+        background-position: 50%;
+    }
+
+    100%{
+        background-position: 0%;
+    }
+    
+}

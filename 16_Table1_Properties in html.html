@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-Properties in HTML</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+
+        /* caption {
+            caption-side: top;
+            margin-left: 100px;
+            padding-left: 20px;
+        } */
+
+        div{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 40px;
+            font-weight: lighter;
+
+        }
+
+        /* table td:nth-of-type(even){
+            background-color: aquamarine;
+        } */
+
+        table tr:nth-of-type(even){
+            background-color: bisque;
+        }
+
+        table td:nth-of-type(odd){
+            background-color: brown;
+        }
+
+
+       
+    </style>
+</head>
+<body>
+    
+    <h3 style="margin-left: 570px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 40px;" >Display table </h3>
+    <div style="margin-left: 550px;">
+    <caption>Student Details</caption>
+    
+</div>
+
+
+
+    <table width="50%" border="1px" cellpadding="10px" cellspacing="20px" >
+       <thead>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>CITY</th>
+        </thead>
+        
+        <tr>
+            <td>Ragul</td>
+            <td>14</td>
+            <td>trichy</td>
+        </tr>
+
+        <tr>
+            <td>Appu</td>
+            <td>19</td>
+            <td>trichy</td>
+        </tr>
+
+        <tr>
+            <td>Varshini</td>
+            <td>17</td>
+            <td rowspan="2">kerala</td>
+        </tr>
+
+        <tr>
+            <td>Akash</td>
+            <td>11</td>
+            
+        </tr>
+
+        <tr>
+            <td>Raja</td>
+            <td>45</td>
+            
+        </tr>
+
+        <tr>
+            <td>Rohini</td>
+            <td>34</td>
+            
+        </tr>
+
+        <tr>
+            <td>Raja</td>
+            <td>40</td>
+            
+        </tr>
+
+        <tr>
+            <td>nagu</td>
+            <td>33</td>
+            
+        </tr>
+
+
+    
+        <tfoot>
+            <tr>
+                <td colspan="3">Raja retnam</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

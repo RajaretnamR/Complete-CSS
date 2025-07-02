@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+        }
+        h1{
+            text-align: center;
+            font-weight: 400;
+            color: lightseagreen;
+            text-transform: uppercase;
+        }
+        .table{
+            border-collapse: collapse;
+            font-size: 20px;
+            min-width: 600px;
+            margin: 30px auto;
+            box-shadow: 0 0 30px rgba(0,0,0,0.4);
+            user-select: none;
+            cursor: pointer;
+            
+        }
+        .table thead tr {
+            background-color: #2f3640;
+            color: #fff;
+            
+        }
+        .table th{
+           font-weight:500;
+           padding: 12px 15px;
+           text-align: left;
+           text-transform: uppercase;
+        }
+
+        .table td{
+            padding: 12px 15px;
+            color: rgba(0,0,0,0.7);
+        }
+        .table tbody tr{
+            border-bottom: 1px solid #ccc;
+        }
+        .table tbody tr:nth-last-of-type(even){
+            background-color:#f3f3f3;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Table Style in CSS</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Raja retnam</td>
+                <td>19</td>
+                <td>Kerala</td>
+                <td>Active</td>
+            </tr>
+
+             <tr>
+                <td>Raja retnam</td>
+                <td>19</td>
+                <td>Kerala</td>
+                <td>Active</td>
+            </tr>
+
+             <tr>
+                <td>Ragul</td>
+                <td>15</td>
+                <td>Trichy</td>
+                <td>Active</td>
+            </tr>
+
+             <tr>
+                <td>Raja sekar</td>
+                <td>45</td>
+                <td>Trichy</td>
+                <td>Not Active</td>
+            </tr>
+
+             <tr>
+                <td>Rohini</td>
+                <td>34</td>
+                <td>Kerala</td>
+                <td>Active</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element </title>
+    <style>
+        h2,h3{
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: -10px;           
+        }
+        p{
+            text-align: justify;
+            font-style: italic;
+
+        }
+        span{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2::first-line{
+            color: magenta;
+
+        }
+        h3::first-letter{
+            color:chocolate ;
+            
+        }
+        ::placeholder{
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudo Element in CSS </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quas alias dolore modi, ipsum cupiditate sapiente, officiis magnam beatae, repellendus eius facilis corrupti ex similique omnis quidem excepturi nostrum molestiae?</p>
+    <h3>Pseudo Element in CSS </h3>
+    <div id="one">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, earum. Quo aut quis alias totam corporis pariatur explicabo dicta recusandae magnam deserunt saepe reiciendis blanditiis rerum fugit, a, architecto repellendus!</p>
+    </div>
+    <span>Name:</span>
+    <input type="text" placeholder="Enter the name :" class="name">
+    <label for="name"></label>
+    
+</body>
+</html>

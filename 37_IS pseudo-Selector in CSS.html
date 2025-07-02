@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS Pseudo Selector </title>
+    <style>
+      :is(#one,#two) h3,h5,p{
+        color: brown;
+      }
+      :is(#one,#two) h1:hover{
+            color: greenyellow;
+      }
+    </style>
+</head>
+<body>
+    
+    <div id="one">
+        <h2>:Is Pseudo Selector in CSS </h2>
+        <h3>:Is Pseudo Selector in CSS</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque cum laboriosam labore id ullam fugit explicabo quos, totam neque eligendi!</p>
+        <h4>:Is Pseudo Selector in CSS</h4>
+    </div>
+    <hr>
+    <div id="two">
+        <h1>:Is Pseudo Selector in CSS</h1>
+        <h5>:Is Pseudo Selector in CSS</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque cum laboriosam labore id ullam fugit explicabo quos, totam neque eligendi!</p>
+        <h6>:Is Pseudo Selector in CSS</h6>
+    </div>
+    
+</body>
+</html>

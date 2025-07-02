@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors in CSS </title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        h1{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 600px;
+        }
+        .one + p{           /* [+]   idhu specific ah div la nammaku theyvayanadha style panuradhuku use panura symbol */ 
+            color: red;
+        }
+
+        div[class="one"]{   /*  indha mari  DIV kulla specific ah namma use panna class & adhoda name veychu style panna specific ah maarum */
+            background:brown
+        }
+        div[id=three]{      /*  indha mari namma ID ku kuda specific ah change panna use panikalam */ 
+            color: blue;
+        }
+        div[class~="two"]{  /* [~]-> This is Tittled Symbol (idhu oru style panitom oru class ku adhey class ku adutha style panurom ana previous panna style show aagala na andha symbol ah namma style panum bodhu "=" munnadi use panna corret ah work aagum )*/
+            background:grey;
+        }
+        .txt{
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            margin-left: 100px;
+        }
+        a[title="link-1"]{
+            color: white;
+        }
+        a[title="link-2"]{
+            color: brown;
+            
+        }
+        a[href="18_Table-Properties in CSS.html"]{
+            background: darkblue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>More Selectors in CSS </h1>
+    <div class="one">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem rem adipisci voluptatem aliquid magni maiores vitae. Distinctio aspernatur cupiditate dolore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At inventore rerum eveniet, delectus perferendis nulla eum odio aliquam deleniti maiores.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum. Consequatur repellendus voluptatibus debitis labore pariatur fugit, nesciunt asperiores accusantium?</p>
+   
+        <div class="two txt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus fuga eligendi architecto blanditiis odio maiores, perferendis rerum sequi eum!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut explicabo sed cumque eos eligendi cupiditate praesentium atque nihil incidunt amet.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit neque dicta debitis a cupiditate? Dolorem accusamus commodi odit facilis esse!</p>
+        </div>
+   </div>
+   <div id="three">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officia nulla quas quae dolorum laborum! Rem reprehenderit consectetur in cumque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ea, recusandae sint odio nam? Atque obcaecati qui enim necessitatibus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui voluptatem dignissimos nobis veritatis rem minima officia voluptatibus odio voluptas asperiores. </p>  
+    </div>
+     <a href="18_Table-Properties in CSS.html" title="link-1">link-1</a>
+     <a href="17_Table2-Properties in html.html" title="link-2">link-2</a>
+     <a href="16_Table1_Properties in html.html" title="link-3">link-3</a>
+     <a href="15_Display-Properties.html" title="link-4">link-4</a>
+    
+</body>
+</html>

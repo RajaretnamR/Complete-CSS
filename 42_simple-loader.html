@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Loadert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-color:navy;
+        }
+        .spinner{
+            height: 50px;
+            width: 50px;
+            border: 4px solid #fff;
+            border-top: 4px solid black;
+            border-radius: 40px;
+            animation: circle 2s linear infinite;
+            /* animation-name: circle;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+            }
+        p{
+            color: #fff;
+            font-weight: thin;
+        }    
+
+        @keyframes circle{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+    <p>Please wait While Loading....</p>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List-Properties in html</title>
+    <style>
+        #one  li{
+            /* list-style-type:square;
+            list-style-type:circle;
+            list-style-type:decimal;
+            list-style-type:lower-roman;
+            list-style-type:upper-roman;
+            list-style-type:lower-alpha;
+            list-style-type:upper-alpha; */
+            list-style-type:none;
+            font-size: xx-large;
+        }
+        
+    
+
+        #one li::before{
+              content: '';
+              display: inline-block;
+              margin-right: 20px;
+              height: 30px;
+              width: 30px;
+              background-image: url(https://png.pngtree.com/png-vector/20231214/ourmid/pngtree-red-round-button-glossy-element-three-dimensional-button-free-pattern-png-image_11353689.png);
+              background-size: cover;
+              
+        }
+
+        #two   li{
+            list-style-type: none;
+            list-style-position: inside;
+            
+            font-size: xx-large;
+            
+              
+        }
+
+        #two li::before{
+            content: '';
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiY07AyhndtjJUDioQlzhGRWWs0LX_wK0tiQ&s);
+            background-size: cover;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">List Properties </h1>
+    <h3 style="margin-left: 80px; font-size: xx-large;">List-1</h3>
+    <ul id="one">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Register</li>
+        <li>About</li>
+        <li>Click</li>
+    </ul>
+    
+    <hr>
+
+    <h3 style="margin-left: 80px; font-size: xx-large;" >List-2</h3>
+    <ul id="two">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Register</li>
+        <li>About</li>
+        <li>Click</li>
+    </ul>
+</body>
+</html>

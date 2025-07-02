@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Child Items In CSS </title>
+    <style>
+        ul li:first-child{
+            color: red;
+        }
+        ul li:nth-child(odd){
+            color: red;
+        }
+        ul li:nth-child(even){
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h2>Access Child Items </h2> 
+    <ul>                          <!-- Easy ah Ul kulla Ivalo list ha create panna single command "(ul>li*6{Raja retnam$6})"   -->
+        <li>Raja retnam1</li>
+        <li>Raja retnam2</li>
+        <li>Raja retnam3</li>
+        <li>Raja retnam4</li>
+        <li>Raja retnam5</li>
+        <li>Raja retnam6</li>
+    </ul>
+</body>
+</html>

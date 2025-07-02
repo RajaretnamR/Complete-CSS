@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property </title>
+    <style>
+        body{
+                margin: 0px;
+                padding: 0px;
+        }
+        h3{
+            font-size: 30px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+        }
+        
+        .box{
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+            transition-property: all;
+            transition-duration: 0.8s;
+            transition-timing-function: linear;
+            position: relative;
+
+        }
+     
+        .box:hover{
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+           
+
+        }
+        .box h3{
+            position: absolute;
+            display:contents;
+        }
+       
+    </style>
+</head>
+<body>
+    <h3>Transition property in CSS </h3>
+    <div class="box">
+        <h3>Hi💕😎</h3>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector in CSS </title>
+    <style>
+       
+        li:first-child{       /*idhu use panuradu oru parent kulla iruka First child ah call panuradhuku use panuradhu*/
+            color: red;
+        }
+        li:last-child{         /*idhu use panuradu oru parent kulla iruka last child ah call panuradhuku use panuradhu*/
+            color: orangered;
+        }
+        #firstchild li:first-child{  /*idhu specfic ah nammaku theyvana parent la iruka child ah call panuradhuku */
+            color: teal;
+        }
+        li:nth-child(even){          /*usual ah odd & even type la element ah call panuradhuku*/
+            color: yellowgreen;
+        }
+        p:last-child{                /*Pseudo Selector enaikum parent element illana use aagadhu so epavum parent irundha mattum dha use aagum*/
+            color: navy;
+        }
+        p:nth-last-child(2){        /*idhoda meaning " nth-last-child "  apd na last la irundhu count pani adhoda rsults ah kudukum */
+            color: blueviolet;
+        }
+        p:nth-of-type(2){
+            color: turquoise;
+        }
+        p:nth-of-type(6){           /*  "nth-of-type()" idhukulla namma enna number kudukuromo andha parent kulla enna order ah match pani correct ah result ah nammaku kudukum */
+            color: mediumvioletred;
+        }
+        #O1 :only-child{            /*idhu vandhu oru parent kulla orey oru child irundha mattum apply aagura Pseudo Selector */
+            color: yellowgreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Pseudo Selector in CSS |First Child | Last child | Nth-Child | Nth-last child </h2>
+    <div id="firstchild">
+        <ul>
+            <li>child1</li>
+            <li>child2</li>
+            <li>child3</li>
+            <li>child4</li>
+            <li>child5</li>
+            <li>child6</li>
+        </ul>
+    </div>
+<hr>
+    <div id="secondchild">
+        <ul>
+            <li>child1</li>
+            <li>child2</li>
+            <li>child3</li>
+            <li>child4</li>
+            <li>child5</li>
+            <li>child6</li>
+        </ul>
+    </div>
+    <div>
+    <p><b>para:1</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus placeat aliquid hic saepe, exercitationem nihil! Vitae fugit velit minima sapiente?</p>
+    <p><b>para:2</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus ipsam vero omnis quaerat eum similique recusandae molestiae, atque aperiam.</p>
+    <p><b>para:3</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto delectus suscipit voluptates tempora quod nam ut vero ipsa explicabo id.</p>
+    <p><b>para:4</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto delectus suscipit voluptates tempora quod nam ut vero ipsa explicabo id.</p>
+    <p><b>para:5</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto delectus suscipit voluptates tempora quod nam ut vero ipsa explicabo id.</p>
+    <p><b>para:6</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto delectus suscipit voluptates tempora quod nam ut vero ipsa explicabo id.</p>
+
+    </div>  
+
+    <!-- Pesudo CSS Selcetor for |:Only-Child|-->
+     <h3>Pesudo CSS Selcetor for |:Only-Child|</h3>
+     <ol id="O1">
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, rem!</p>
+    </ol>
+
+     <ul>
+        <li>raja-1</li>
+        <li>raja-2</li>
+        <li>raja-3</li>
+        <li>raja-4</li>
+        <li>raja-5</li>
+     </ul>
+</body>
+</html>

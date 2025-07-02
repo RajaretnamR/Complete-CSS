@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Psuedo Selector </title>
+    <style>
+        #t1:focus{               /* " :Focus " Attributes namma use panna namma cursor ah adhu mela veykum bodhu adhoda style namma istam padi namma panikalam  */
+                 outline: none;
+                 border: 3px solid brown;
+                 background-color: yellowgreen;      
+        }
+
+        input[type="checkbox"]:checked{   /*indha checkbox properties edhuku use panurom na oru checkbox meyla namma cursor ah veycha adhu check aagiruchuna adhoda styles ah nammaku prudicha mari mathalam*/
+            box-shadow: 0 0 0 3px red;
+        }
+        #t2:enabled{                 /*  enabled andha property endha box or whatever edhu enabled ah iruko adhoda style ah namma ista padi mathikalam  */
+            background-color: bisque;
+        }
+       #t3:disabled{                 /*  disabled andha property endha box disable apd nu namma kuduthurukoma adhoda style ah mathalam  */
+        background-color: violet;
+       }
+       #t4:required{                 /*  required andha property use pani edhu namma required nu kuduthurukoma adhu style ah namma change panikalam  */
+        background-color: tomato;
+       }
+       input[type="email"]:read-only{
+         background-color: red;
+       }
+       input[type="email"]:read-write{
+         background-color: grey;
+       }
+      #t7:valid{
+        border: 4px solid blue;
+        outline: none;
+      }
+      #t7:invalid{
+        outline: none;
+        border:  4px dashed red;
+      }
+
+      #male:default{
+        box-shadow: 0 0 0 5px red;
+      }
+      option:default{
+        background-color: teal;
+      }
+
+    </style>
+</head>
+<body>
+    <h3>Form Psuedo Selector in CSS</h3>
+
+    <span>:Focus :</span>
+    <br>
+    <input type="text" id="t1">
+    <hr>
+    <span>:Checked box :</span>
+    <br>
+    <input type="checkbox" id="cricket">
+    <label for="cricket">cricket</label>
+
+    <input type="checkbox" id="kabbadi">
+    <label for="kabbadi">kabbadi</label>
+
+    <input type="checkbox" id="football">
+    <label for="football">football</label>
+
+    <hr>
+    <span>:enabled |:disabled |:required</span>
+    <br>
+    <input type="text" id="t2" >
+    <br>
+    <input type="text" id="t3" disabled>
+    <br>
+    <input type="text" id="t4" required>
+    <hr>
+    <span>read-only | read-write</span>
+    <br>
+    <input type="email" id="t5" readonly>
+    <br>
+    <input type="email" id="t6" readwrite>
+    <hr>
+
+    <span>:valid | :invalid</span>
+    <br>
+    <input type="text" placeholder="Enter your Password " pattern="[a-z]*" id="t7">
+     <hr>
+     <span>:default :</span>
+     <br>
+     <input type="radio" name="gender" id="male" checked>
+     <label for="male">male</label>
+     <br>
+     <input type="radio" name="gender" id="female" >
+     <label for="female">female</label>
+     <hr>
+     <span>:default</span>
+     <br>
+     <select>
+                <option value="">select</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JAVA" selected>JAVA</option>
+                <option value="PYTHON">PYTHON</option>
+     </select>
+</body>
+</html>
